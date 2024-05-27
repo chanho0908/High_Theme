@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.HighThemeTest.High" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_high</item>
+
+        <item name="android:colorBackground">@color/background_color_high</item>
+        <item name="android:textColor">@color/text_primary_high</item>
+        <item name="android:textColorPrimary">@color/primary_high</item>
+        <item name="android:statusBarColor">@color/navi_background_high</item>
+
+        <!-- 정의한 attr-->
+        <item name="text_primary">@color/text_primary_high</item>
+        <item name="text_secondary">@color/text_secondary_high</item>
+        <item name="text_tertiary">@color/text_secondary_high</item>
+        <item name="icon_img">@drawable/icon_high</item>
+    </style>
+
+    <style name="Theme.HighThemeTest.High" parent="Base.Theme.HighThemeTest.High" />
+</resources>

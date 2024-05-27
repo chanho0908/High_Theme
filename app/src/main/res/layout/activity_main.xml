@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/basicBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기본 테마" />
+
+        <RadioButton
+            android:id="@+id/darkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다크 테마" />
+
+        <RadioButton
+            android:id="@+id/highBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="고대비 테마" />
+
+        <RadioButton
+            android:id="@+id/systemBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시스템 테마와 동일" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="?attr/text_primary"
+        android:text="테마 변경" />
+
+    <Button
+        android:id="@+id/buttonActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="?attr/text_primary"
+        android:text="액티비티 이동" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="?attr/icon_img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1번째 텍스트"
+        android:textColor="?attr/text_primary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2번째 텍스트"
+        android:textColor="?attr/text_secondary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3번째 텍스트"
+        android:textColor="?attr/text_tertiary"/>
+
+
+</LinearLayout>

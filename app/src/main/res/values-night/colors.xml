@@ -1,0 +1,14 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="background_color">#FFFFFF</color>
+    <color name="primary">#FF0000</color>
+    <color name="text_primary">#7000FF</color>
+    <color name="primary_disabled">#414141</color>
+    <color name="navi_background">#262626</color>
+    <color name="text_secondary">#00D1FF</color>
+    <color name="card_background">#274AD9</color>
+    <color name="text_tertiary">#FF4C00</color>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="primary" format="color"/>
+    <attr name="background_color" format="color"/>
+    <attr name="text_primary" format="color"/>
+    <attr name="primary_disabled" format="color"/>
+    <attr name="navi_background" format="color"/>
+    <attr name="text_secondary" format="color"/>
+    <attr name="card_background" format="color"/>
+    <attr name="text_tertiary" format="color"/>
+
+    <attr name="icon_img" format="reference"/>
+</resources>
