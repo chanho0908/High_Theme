@@ -3,12 +3,10 @@ package kr.co.lion.highthemetest
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import kr.co.lion.highthemetest.PreferenceUtil.delThemePrefs
-import kr.co.lion.highthemetest.PreferenceUtil.getThemePrefs
-import kr.co.lion.highthemetest.PreferenceUtil.setThemePrefs
 import kr.co.lion.highthemetest.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
+    private val app = HighThemeTestApp.getInstance()
 
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
@@ -19,11 +17,11 @@ class MainActivity : BaseActivity() {
 
         setContentView(binding.root)
 
-        if(getThemePrefs() == "basic"){
+        if(app.getThemePrefs() == "basic"){
             binding.basicBtn.isChecked = true
-        } else if(getThemePrefs() == "night"){
+        } else if(app.getThemePrefs() == "night"){
             binding.darkBtn.isChecked = true
-        } else if(getThemePrefs() == "high"){
+        } else if(app.getThemePrefs() == "high"){
             binding.highBtn.isChecked = true
         } else {
             binding.systemBtn.isChecked = true
@@ -32,22 +30,22 @@ class MainActivity : BaseActivity() {
         binding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
             when(checkedId){
                 R.id.basicBtn -> {
-                    setThemePrefs("basic")
+                    app.setThemePrefs("basic")
                 }
                 R.id.darkBtn -> {
-                    setThemePrefs("night")
+                    app.setThemePrefs("night")
                 }
                 R.id.highBtn -> {
-                    setThemePrefs("high")
+                    app.setThemePrefs("high")
                 }
                 R.id.systemBtn -> {
-                    delThemePrefs()
+                    app.delThemePrefs()
                 }
             }
         }
 
         binding.checkButton.setOnClickListener {
-            Log.d("theme", getThemePrefs().toString())
+            Log.d("theme", app.getThemePrefs().toString())
             recreate()
         }
 
